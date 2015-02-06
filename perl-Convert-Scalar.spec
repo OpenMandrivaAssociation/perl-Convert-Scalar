@@ -3,7 +3,7 @@
 
 Name:		perl-%{module}
 Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Release:	6
 
 Summary:	Convert-Scalar module for perl 
 License:	GPL+ or Artistic

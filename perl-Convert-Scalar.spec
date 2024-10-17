@@ -8,7 +8,7 @@ Release:	6
 Summary:	Convert-Scalar module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{module}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel

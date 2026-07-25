@@ -1,15 +1,15 @@
 %define	module	Convert-Scalar
-%define	upstream_version 1.1
+%define	upstream_version 1.12
 
 Name:		perl-%{module}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Convert-Scalar module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{module}
-Source0:	http://www.cpan.org/modules/by-module/Convert/%{module}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Convert-Scalar
+Source0:	https://cpan.metacpan.org/authors/id/M/ML/MLEHMANN/Convert-Scalar-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel

@@ -1,15 +1,13 @@
 %define	module	Convert-Scalar
-%define	upstream_version 1.12
-
 Name:		perl-%{module}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.12
+Release:	2
 
 Summary:	Convert-Scalar module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Convert-Scalar
-Source0:	https://cpan.metacpan.org/authors/id/M/ML/MLEHMANN/Convert-Scalar-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/ML/MLEHMANN/Convert-Scalar-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -20,7 +18,7 @@ representation or state of a perl scalar. All of these work in-place, that is,
 they modify their scalar argument. No functions are exported by default.
 
 %prep
-%setup -q -n %{module}-%{upstream_version}
+%setup -q -n %{module}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -56,9 +54,7 @@ make test
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 1.40.0-1mdv2010.0
 + Revision: 406921
-- rebuild using %%perl_convert_version
-
-* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 1.04-3mdv2009.0
+- rebuild using %1.12 Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 1.04-3mdv2009.0
 + Revision: 256138
 - rebuild
 

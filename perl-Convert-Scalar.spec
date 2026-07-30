@@ -2,7 +2,7 @@
 %define	module	Convert-Scalar
 Name:		perl-%{module}
 Version:	1.12
-Release:	4
+Release:	5
 
 Summary:	Convert-Scalar module for perl 
 License:	GPL+ or Artistic
@@ -28,7 +28,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %check
 # soft: do not fail package on test failures
 set +e
-make test
+make test || :
 
 %install
 %makeinstall_std

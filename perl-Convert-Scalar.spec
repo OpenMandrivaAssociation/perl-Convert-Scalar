@@ -2,7 +2,7 @@
 %define	module	Convert-Scalar
 Name:	perl-%{module}
 Version:	1.12
-Release:	6
+Release:	7
 
 Summary:	Convert-Scalar module for perl 
 License:	GPL+ or Artistic
